@@ -1,0 +1,8 @@
+[package]
+name = "rst-host"
+description = "RilStream host library: transports, discovery, schemas, stats, dashboard"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+rst-proto = { path = "../rst-proto" }

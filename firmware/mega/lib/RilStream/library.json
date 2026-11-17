@@ -1,0 +1,7 @@
+{
+  "name": "RilStream",
+  "version": "0.0.1",
+  "description": "Realtime sensor streaming from a robot to a laptop",
+  "frameworks": "arduino",
+  "platforms": "atmelavr"
+}

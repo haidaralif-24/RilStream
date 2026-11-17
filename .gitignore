@@ -1,0 +1,12 @@
+# Rust
+target/
+
+# PlatformIO
+.pio/
+compile_commands.json
+
+# Secrets: copy config.example.h to config.h and fill it in
+firmware/esp/include/config.h
+
+# macOS
+.DS_Store

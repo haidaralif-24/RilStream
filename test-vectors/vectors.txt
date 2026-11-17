@@ -1,0 +1,10 @@
+# Golden test vectors, shared by the Rust and C++ tests. Source: SPEC.md section 12.
+#
+# Format, one vector per line, fields separated by " | ":
+#   name | decoded bytes (hex) | encoded bytes (hex, COBS plus 0x00 delimiter)
+# Lines starting with # are comments.
+#
+cobs_single_zero | 00 | 01 01 00
+cobs_mixed | 11 22 00 33 | 03 11 22 02 33 00
+descriptor_enc | 01 00 B6 00 00 E8 03 00 00 02 32 00 03 65 6E 63 02 06 00 00 80 3F 01 6C 04 74 69 63 6B 06 00 00 80 3F 01 72 04 74 69 63 6B 73 7A | 02 01 02 B6 01 03 E8 03 01 03 02 32 07 03 65 6E 63 02 06 01 0B 80 3F 01 6C 04 74 69 63 6B 06 01 0C 80 3F 01 72 04 74 69 63 6B 73 7A 00
+data_enc | 01 02 B6 01 00 40 42 0F 00 64 00 00 00 9C FF FF FF 62 0B | 05 01 02 B6 01 04 40 42 0F 02 64 01 01 07 9C FF FF FF 62 0B 00

@@ -1,0 +1,9 @@
+[package]
+name = "rst-proto"
+description = "RilStream wire format: frames, COBS, CRC, descriptors (no_std)"
+version.workspace = true
+edition.workspace = true
+
+# Dependencies are added when needed (for example `cobs`, `crc`).
+# Keep this crate no_std: nothing here may require std.
+[dependencies]
